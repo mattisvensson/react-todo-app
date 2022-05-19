@@ -1,0 +1,45 @@
+div#Info {
+    position: absolute;
+    bottom: 0;
+    left: 2%;
+    cursor: pointer;
+    width: 400px;
+    background: #444;
+    border-radius: 10px 10px 0 0 ;
+    padding: 10px;
+    font-family: sans-serif;
+    color: white;
+    box-shadow: 0 0 8px 10px rgb(0 0 0 / 20%);
+    transition: all .5s;
+}
+
+div#Info.collapsed {
+    bottom: -132px;
+}
+
+div#Info hr {
+    margin: 7px 0;
+}
+
+div#Info p:first-child {
+    text-align: center;
+}
+
+div#Info p:nth-last-child(2) {
+    margin: 10px 0;
+}
+
+div#Info a {
+    text-decoration: none;
+    color: orange;
+}
+
+div#Info a:hover {
+    color: darkorange;
+}
+
+div.App.mobile div#Info {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+}
